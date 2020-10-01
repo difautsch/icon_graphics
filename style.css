@@ -21,7 +21,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
-    font-family: Georgia, serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 h1 {
@@ -31,6 +31,7 @@ h1 {
 
 h2 {
     padding-left: 10%;
+    font-weight: normal;
 }
 
 img {
@@ -40,12 +41,14 @@ img {
 }
 
 .column {
-    flex: 50%;
+    flex: 100%;
     padding: 10px;
+    margin-right: 100px;
 }
 
 .row {
     display: flex;
+    justify-content: space-between;
 }
 
 .body_container {
@@ -54,25 +57,41 @@ img {
 
 .center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     text-align: center;
+    margin-right: -125px;
 }
 
-.fas {
+.margin_left {
+    margin-left: 100px;
+}
+
+.left {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
+}
+
+.overlapping_container {
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #F78A08;
+    z-index: -1;
+    margin-top: 10px;
 }
 
 .container {
     max-width: 800px;
+    max-height: 90%;
     background-color: #0875F7;
     margin: 0 auto;
     border-width: medium;
-    border-color: #FFFFFF;
+    border-color: #000000;
     border-style: solid;
     color: #FFFFFF;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .flex {
